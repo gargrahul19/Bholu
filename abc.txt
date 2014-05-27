@@ -1,0 +1,5 @@
+ might be doing this wrong, but if I attempt to clone a repo that only has a develop branch and then try to start a feature using git flow feature start foo then it tells me to re-initialize git flow. Running git flow init fails because the master branch doesn't exist. I have to manually create it for it to work.
+
+This seems wrong to me. Behind the scenes, surely, git flow should either create the required branches or just deal with them not being there. Does this sound like a bug?
+
+Here's a sample session:
